@@ -33,6 +33,36 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Leadtools">
+      <HintPath>..\lib\Leadtools.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs">
+      <HintPath>..\lib\Leadtools.Codecs.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Cmp">
+      <HintPath>..\lib\Leadtools.Codecs.Cmp.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Dox">
+      <HintPath>..\lib\Leadtools.Codecs.Dox.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Png">
+      <HintPath>..\lib\Leadtools.Codecs.Png.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Ppx">
+      <HintPath>..\lib\Leadtools.Codecs.Ppx.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Tif">
+      <HintPath>..\lib\Leadtools.Codecs.Tif.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Xlx">
+      <HintPath>..\lib\Leadtools.Codecs.Xlx.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Document.Raster">
+      <HintPath>..\lib\Leadtools.Document.Raster.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Drawing">
+      <HintPath>..\lib\Leadtools.Drawing.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +76,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppChooser.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="ConverterProvider.cs" />
+    <Compile Include="Converters\CommonConverter.cs" />
+    <Compile Include="Converters\IConverter.cs" />
+    <Compile Include="Converters\LicenseManager.cs" />
+    <Compile Include="Logger\ILogger.cs" />
+    <Compile Include="Logger\Logger.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +92,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SupportedApplications.cs" />
+    <Compile Include="TestRunner.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

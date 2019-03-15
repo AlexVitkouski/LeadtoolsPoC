@@ -19,7 +19,9 @@ namespace LeadtoolsPoC
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-
+            var testRunner = new TestRunner(Common.PathTSrcFolder, pictureBox1);
+            testRunner.Run();
+            MessageBox.Show("Done.");
         }
     }
 }
